@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +10,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&family=Inter:wght@400;600&family=Lato&family=Lobster&family=Manrope:wght@500;700&family=Montserrat:wght@200;400;500&family=Nunito:wght@400;500;600;800&family=Open+Sans&family=Playfair+Display:wght@400;500&family=Poppins:wght@500&family=Roboto+Mono:wght@300;400&family=Roboto:wght@300;400&family=Source+Code+Pro:wght@300;400&family=Work+Sans&display=swap" rel="stylesheet">
 <!-- font awesome cdn -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<!-- daisy ui -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.7/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
 </head>
 <style>
     *{
@@ -40,6 +43,60 @@
                 <input class="p-1 md:p-2 rounded-lg text-sm border " type="text" placeholder="search here"><span class="absolute right-2 top-1"><i class="fas fa-search text-black"></i></span>
             </div>
         </nav>
+
+        <!-- banner -->
+        <div class="my-5">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                  <div class="relative w-full">
+                    <img src="./images/banner1.png" class="w-full rounded-xl" />
+                    <div class="absolute top-0 left-0 right-0 bottom-0 w-full flex justify-center text-center text-white w-full bg-[rgba(0,0,0,.5)] rounded-xl">
+                        <div class="w-2/3 space-y-1 md:space-y-2 mt-5 md:mt-20">
+                            <h2 class="text-lg md:text-5xl md:font-bold">Lorem ipsum dolor sit amet consectetur vero?</h2>
+                            <p class="text-xs md:text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, quod.</p>
+                            <button class="btn btn-error btn-sm md:btn-md">Shop Now</button>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle btn-sm md:btn-md">❮</a> 
+                    <a href="#slide2" class="btn btn-circle btn-sm md:btn-md">❯</a>
+                  </div>
+                </div> 
+                <div id="slide2" class="carousel-item relative w-full">
+                    <div class="relative w-full">
+                        <img src="./images/banner2.png" class="w-full rounded-xl" />
+                        <div class="absolute top-0 left-0 right-0 bottom-0 w-full flex justify-center text-center text-white w-full bg-[rgba(0,0,0,.5)] rounded-xl">
+                            <div class="w-2/3 space-y-1 md:space-y-2 mt-5 md:mt-20">
+                                <h2 class="text-lg md:text-5xl md:font-bold">Lorem ipsum dolor sit amet consectetur vero?</h2>
+                                <p class="text-xs md:text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, quod.</p>
+                                <button class="btn btn-error btn-sm md:btn-md">Shop Now</button>
+                            </div>
+                        </div>
+                      </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle btn-sm md:btn-md">❮</a> 
+                    <a href="#slide3" class="btn btn-circle btn-sm md:btn-md">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                    <div class="relative w-full">
+                        <img src="./images/banner3.png" class="w-full rounded-xl" />
+                        <div class="absolute top-0 left-0 right-0 bottom-0 w-full flex justify-center text-center text-white w-full bg-[rgba(0,0,0,.5)] rounded-xl">
+                            <div class="w-2/3 space-y-1 md:space-y-2 mt-5 md:mt-20">
+                                <h2 class="text-lg md:text-5xl md:font-bold">Lorem ipsum dolor sit amet consectetur vero?</h2>
+                                <p class="text-xs md:text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, quod.</p>
+                                <button class="btn btn-error btn-sm md:btn-md">Shop Now</button>
+                            </div>
+                        </div>
+                      </div>
+                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle btn-sm md:btn-md">❮</a> 
+                    <a href="#slide1" class="btn btn-circle btn-sm md:btn-md">❯</a>
+                  </div>
+                </div> 
+              </div>
+        </div>
     </header>
 </body>
 </html>
